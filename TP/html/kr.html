@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(っ- ‸ - ς)</title>
+    <link rel="icon" type="image/x-icon" href="../images/whiteflower.ico">
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- lightgallery css-->
+	<link type="text/css" rel="stylesheet" href="../css/lightgallery.css"/>
+
+	<!-- lightgallery plugins -->
+	<link type="text/css" rel="stylesheet" href="../css/lg-zoom.css" />
+
+	<!-- scroll effects css -->
+	<link rel="stylesheet" href="../css/scroll.css">
+
+	<!-- personal css -->
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="animate-in">
+    <header class="grid">
+        <img src="../images/logo.png" alt="Logo" class="logo">
+
+		<div class="dropdown">
+			<button class="btn btn-secondary btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > 
+				<ion-icon name="menu-outline"></ion-icon>
+			</button>
+			<div class="dropdown-menu dropdown-menu-right">
+			  <a class="dropdown-item" href="../index.html">about</a>
+			  <a class="dropdown-item" href="jp.html">japan</a>
+			  <a class="dropdown-item" href="">korea</a>
+			</div>
+		</div>
+		
+		<nav>
+			<ul>
+				<li><a href="../index.html">about</a></li>
+				<li><a href="jp.html">japan</a></li>
+				<li><a href="">korea</a></li>
+			</ul>
+		</nav>
+    </header>
+
+    <main>
+		<div class="grid">
+            <p class="title">branden's travel blog 🇯🇵/🇰🇷<br> days 14-21: seoul</p>
+        </div>
+
+		<hr>
+
+		<section>
+			<div class="grid">
+				<p class="kr-desc animatable fadeIn">
+					influenced by my friend group's decision making to go to seoul after japan around 5 months before our trip, i decided learn the korean script hangul for fun— knowing beforehand that it was supposedly really easy to learn. 
+					<br> <br> 
+					it took about a week of practice to fully be able to read everything, albeit at a very slow pace. 
+					<br> <br>
+					while i was in seoul, i could read everything that was around me but not understand any of it. its fascinating to me how intuitive the hangeul script is.
+					<br> <br>
+					<i>안녕하세요, 나는 한국어를 몰라요!</i>
+					<br> <br>
+					the image is an openable gallery, featuring multiple photos shot from my phone.
+				</p>
+		
+				<!-- light gallery plugin used, though slightly differently -->
+				<div id="lightgallery" class="lightgallery-adjustment animatable bounceInRight">
+
+					<!-- each image follows the same formula as the first one below here -->
+					<a href="../images/namsan.jpg" data-sub-html="&lt;h4&gt;Namsan Tower&lt;/h4&gt; &lt;p&gt;Namsan, Seoul&lt;/p&gt;"> 
+						<img alt="A wall within Namsan Tower, Seoul, featuring lots of hangeul writing." src="../images/namsan.jpg" class="photo-resize" />
+					</a>
+					<!-- data-sub-html allows for the captioning with different font weights to showup when browsing through each image -->
+
+					<a href="../images/bukhansan.jpeg" data-sub-html="&lt;h4&gt;Bukhansan Trail&lt;/h4&gt; &lt;p&gt;Bukhansan National Park, Seoul&lt;/p&gt;">
+						<img alt="A colourful hiking trail along the Bukhansan mountain range." src="../images/bukhansan.jpeg" class="photo-resize kr-no-display"/>
+					</a>
+
+					<a href="../images/dongdaemun.jpeg" data-sub-html="&lt;h4&gt;Dongdaemun Design Plaza (DDP)&lt;/h4&gt; &lt;p&gt;Dongdaemun, Seoul&lt;/p&gt;">
+					<img alt="A colourful hiking trail along the Bukhansan mountain range." src="../images/dongdaemun.jpeg" class="photo-resize kr-no-display"/>
+					</a>
+
+					<a href="../images/seoulparade.jpeg" data-sub-html="&lt;h4&gt;A Street Parade&lt;/h4&gt; &lt;p&gt;Insadong, Seoul&lt;/p&gt;">
+						<img alt="A large crowd of people celebrating an event as others march through the middle of a road in the night." src="../images/seoulparade.jpeg" class="photo-resize kr-no-display"/>
+					</a>
+
+					<a href="../images/coexlibrary.jpeg" data-sub-html="&lt;h4&gt;Coex Mall Library&lt;/h4&gt; &lt;p&gt;Yongsan-dong, Seoul&lt;/p&gt;">
+						<img alt="A gigantic, curved bookshelf in an open spaced library." src="../images/coexlibrary.jpeg" class="photo-resize kr-no-display"/>
+					</a>
+				
+					<a href="../images/gangnamstatue.jpeg" data-sub-html="&lt;h4&gt;Gangman Style Statue&lt;/h4&gt; &lt;p&gt;Gangnam, Seoul&lt;/p&gt;"> 
+						<img alt="A statue of two hands doing the Gangnam Style dance motion, in Gangnam." src="../images/gangnamstatue.jpeg" class="photo-resize kr-no-display"/>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<br><hr>
+
+    </main>
+    <footer class="flex-row">
+		<ul>
+			<li><a href="https://vsco.co/x400"><ion-icon name="camera-outline"></ion-icon></a></li>
+			<li><a href="https://github.com/brndnh"><ion-icon name="logo-github"></ion-icon></a></li>
+		</ul>
+    </footer>
+
+
+	<!-- bootstrap plugin -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- ionicons plugin -->
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<!-- lightgallery plugin -->
+	<script src="../js/lightgallery.umd.js"></script>
+	<script type="text/javascript">
+		lightGallery(document.getElementById('lightgallery'), {
+			thumbnail: true,
+			allowMediaOverlap: true,
+			licenseKey: '0000-0000-000-0000',
+			speed: 500,
+			// ... other settings
+		});
+	</script>
+
+	<!-- scroll effects script -->
+	<script src="/js/scroll.js"></script>
+
+</body>
+</html>

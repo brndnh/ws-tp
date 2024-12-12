@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(っ- ‸ - ς)</title>
+    <link rel="icon" type="image/x-icon" href="../images/whiteflower.ico">
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- scroll effects css -->
+	<link rel="stylesheet" href="../css/scroll.css">
+
+	<!-- personal css -->
+	<link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body class="animate-in">
+    <header class="grid">
+        <img src="../images/logo.png" alt="Logo" class="logo">
+
+		<div class="dropdown">
+			<button class="btn btn-secondary btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > 
+				<ion-icon name="menu-outline"></ion-icon>
+			</button>
+			<div class="dropdown-menu dropdown-menu-right">
+			  <a class="dropdown-item" href="../index.html">about</a>
+			  <a class="dropdown-item" href="">japan</a>
+			  <a class="dropdown-item" href="kr.html">korea</a>
+			</div>
+		</div>
+		
+		<nav>
+			<ul>
+				<li><a href="../index.html">about</a></li>
+				<li><a href="">japan</a></li>
+				<li><a href="kr.html">korea</a></li>
+			</ul>
+		</nav>
+    </header>
+
+    <main>
+		<div class="grid">
+            <p class="title">branden's travel blog 🇯🇵/🇰🇷<br> days 1-14: japan</p>
+        </div>
+
+		<hr>
+
+		<section>
+			<div class="grid jp-desc">
+
+				<!-- upper blurb. many elements on this page have the 'animatable' tag and feature a scroll animation because of it. (scroll plugin used) -->
+				<p class="animatable fadeInDown"><b>transit...</b></p>
+				<p class="animatable fadeIn">throughout most of my life beyond elementary school, i have been using vancouver's transit system, translink to get around the city whenever I wanted to get to places with my friends. </p>
+		
+				<!-- as i wanted to use different image sizes for mobile viewing and larger displays, i used seperate divs and hid one or the other depending on the screen size of the user. furthermore, the alignment of the images is different depending on the viewport which i thought looked better. -->
+				<div class="jp-gallery">
+					<img src="../images/shinjuku_small.jpg" alt="A photo taken from one of Shinjuku station's platforms, with another platform being full of people." class="photo-resize mobile-display">
+				</div>
+
+				<!-- i broke apart my paragraph using two <br> tags as it allowed for spacing between the <p>'s without having the need to create another tag -->
+				<p class="aligned-text animatable fadeIn">
+					it was fascinating to me how I could just get across most of the city without having to drive a car. my friends in california and texas all drive everywhere to get anything done in comparison. 
+					<br> <br>
+					having been familiarized with how train stations and busses work back at home, I was overwhelmingly surprised by how efficient and just massive the metro systems were in Japan and to an extent, South Korea's subways.
+					<br> <br>
+					it all moves like clockwork; they connect all over the gigantic city, and people just flow in and out of train stations that are way bigger than the ones here in vancouver.
+				</p>
+
+				<!-- "no-display" refers to no element being displayed when opened on mobile, and "mobile-display" is the opposite, showing up exclusively on mobile. this ends up being used back and forth within this section for responsive images -->
+				<div class="jp-gallery align-right animatable bounceInRight">
+					<img src="../images/shinjuku.jpg" alt="A photo taken from one of Shinjuku station's platforms, with another platform being full of people." class="photo-resize no-display">
+				</div>
+
+				<div class="jp-gallery">
+					<img src="../images/shinjukuUnderground_small.jpg" alt="An underground pathway within Shinjuku station with a wide screen playing an advertisement of Honkai Star Rail." class="photo-resize mobile-display">
+				</div>
+
+				<p class="animatable fadeInUp">
+					it all moves like clockwork; they connect all over the gigantic city, and people just flow in and out of train stations that are way bigger than the ones here in vancouver.
+				</p>
+
+				<div class="jp-gallery-landscape align-right">
+					<img src="../images/shinjukuUnderground.jpg" alt="An underground pathway within Shinjuku station with a wide screen playing an advertisement of Honkai Star Rail." class="photo-resize-wide no-display">
+				</div>
+
+				<!--lower blurb -->
+				<p class="animatable fadeInDown"><b>aquariums</b></p>
+			
+				<div class="jp-gallery-landscape animatable bounceInLeft">
+					<img src="../images/jellyfish.jpeg" alt="Closeup photos of Moon Jellyfishes." class="photo-resize-wide no-display">
+				</div>
+
+				<div class="jp-gallery animatable fadeIn">
+					<img src="../images/jellyfish.jpeg" alt="Closeup photos of Moon Jellyfishes." class="photo-resize mobile-display">
+				</div>
+
+				<p class="animatable fadeIn">
+					having grown up in a place where there was only one aquarium with really expensive tickets, the thought of viewing marine life just because never really crossed my mind.
+					<br><br>
+					this all changed when i was planning out my next day on the whim reading my travel booklet, and it suggested going to a local aquarium in tokyo. it was on this day that i acquired my profound interest towards sea mammals.
+				</p>
+			</div>
+		</section>
+
+		<br><hr>
+
+    </main>
+    <footer class="flex-row">
+		<ul>
+			<li><a href="https://vsco.co/x400"><ion-icon name="camera-outline"></ion-icon></a></li>
+			<li><a href="https://github.com/brndnh"><ion-icon name="logo-github"></ion-icon></a></li>
+		</ul>
+    </footer>
+
+
+	<!-- bootstrap plugin -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- ionicons plugin -->
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<!-- scroll effects script -->
+	<script src="/js/scroll.js"></script>
+
+	<!-- page fade transition js -->
+	<script>
+		window.addEventListener("beforeunload", function () {
+  			document.body.classList.add("animate-out");
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(っ- ‸ - ς)</title>
+    <link rel="icon" type="image/x-icon" href="images/whiteflower.ico">
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- flickity css-->
+	<link rel="stylesheet" href="css/flickity.css">
+
+	<!-- scroll effects css -->
+	<link rel="stylesheet" href="css/scroll.css">
+
+	<!-- personal css -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<!-- animate-in is used to fade in the webpage content, and is repeated across all htmls. furthermore, the same header and the footer code is used across all three htmls -->
+<body class="animate-in">
+    <header class="grid">
+        <img src="images/logo.png" alt="Logo" class="logo">
+
+		<!-- usage of a bootstrap dropdown menu that toggles in mobile sized screens -->
+		<div class="dropdown">
+			<button class="btn btn-secondary btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > 
+				<ion-icon name="menu-outline"></ion-icon>
+			</button>
+			<div class="dropdown-menu dropdown-menu-right">
+			  <a class="dropdown-item" href="">about</a>
+			  <a class="dropdown-item" href="html/jp.html">japan</a>
+			  <a class="dropdown-item" href="html/kr.html">korea</a>
+			</div>
+		</div>
+		
+		<!-- regular navigation is used when user's screen is tablet sized or larger -->
+		<nav>
+			<ul>
+				<li><a href="">about</a></li>
+				<li><a href="html/jp.html">japan</a></li>
+				<li><a href="html/kr.html">korea</a></li>
+			</ul>
+		</nav>
+    </header>
+
+    <main>
+		<div class="grid">
+            <p class="title">
+				branden's travel blog 🇯🇵/🇰🇷 <br>
+				about page</p>
+        </div>
+
+		<hr>
+
+		<section>
+			<div class="grid">
+				<p class="intro">hi everyone, this project is a meant to be a mini preview of some things that happened during my vacation trip to japan and south korea in 2023! <br> <br> being inspired by a friend of mine who wrote their own travel blog to asia, i am interested in writing a more detailed trip blog myself! but due to some time constraits we must wait for now... 🚧</p>
+				
+				<!-- usage of flickity plugin -->
+				<div class="main-carousel animatable fadeInUp">
+
+					<div class="carousel-cell">
+						<img class="content" src="images/shibuya.JPG" alt="Night photo of Shibuya Crossing in Shibuya, Tokyo">
+						<div class="caption">shibuya crossing, tokyo</div>
+					</div>
+					<div class="carousel-cell">
+						<img class="content" src="images/naradeer.jpg" alt="Closeup picture of a deer in Nara Park, Nara.">
+						<div class="caption">nara park, nara</div>
+					</div>
+					<div class="carousel-cell">
+						<img class="content" src="images/arashiyama.JPG" alt="A night time photo of the corridor in Arashiyama Bamboo forest, Kyoto.">
+						<div class="caption">arashiyama bamboo forest, kyoto</div>
+					</div>
+					<div class="carousel-cell">
+						<img class="content" src="images/bongeunsa.JPG" alt="A day time photo of the Bongeunsa Temple featuring multiple buddha statues in Gangnam, Seoul.">
+						<div class="caption">bongeunsa temple, seoul</div>
+					</div>
+
+				</div>
+				
+			</div>
+		</section>
+		
+		<!-- br is used to add spacing for the line -->
+		<br><hr>
+    
+	</main>
+
+	<!-- usage of ionicons plugin for linked logos -->
+    <footer class="flex-row">
+		<ul>
+			<li><a href="https://vsco.co/x400"><ion-icon name="camera-outline"></ion-icon></a></li>
+			<li><a href="https://github.com/brndnh"><ion-icon name="logo-github"></ion-icon></a></li>
+		</ul>
+    </footer>
+
+	<!-- bootstrap plugin -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- flickity plugin -->
+	<script src="js/flickity.pkgd.min.js"></script>
+	
+	<!-- flickity js -->
+	<script>
+		$('.main-carousel').flickity({
+			// options
+			cellAlign: 'left',
+			contain: true,
+			wrapAround: true,
+			autoPlay: true,
+			autoPlay: 3000
+		});
+	</script>
+
+	<!-- ionicons plugin -->
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<!-- page fade transition js -->
+	<script>
+		window.addEventListener("beforeunload", function () {
+				document.body.classList.add("animate-out");
+		});
+	</script>
+
+	<!-- scroll effects script -->
+	<script src="js/scroll.js"></script>
+
+</body>
+</html>
